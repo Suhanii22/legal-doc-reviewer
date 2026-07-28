@@ -1,0 +1,224 @@
+
+
+
+
+[
+  {
+    "id": "pt001",
+    "text": "Client shall pay a two percent (2%) discount if payment is received within ten (10) days of invoice date; otherwise, the full invoice amount is due within forty-five (45) days, after which a late fee of two percent (2%) per month applies.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause rewards early payment and still penalizes late payment, giving the consultant protection either way.",
+    "source": "constructed - early payment discount + late penalty combination"
+  },
+  {
+    "id": "pt002",
+    "text": "The Client must pay the Consultant the amount of each tax invoice within the time provided in the Services Schedule and interest applies on overdue payments.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause protects the consultant by providing interest on overdue amounts.",
+    "source": "LawInsider - Payment Due to the Consultant"
+  },
+  {
+    "id": "pt003",
+    "text": "Payment shall be made within fifteen (15) days of invoice receipt. If Client disputes any portion of the invoice, Client shall notify Consultant in writing within five (5) business days and pay the undisputed balance immediately; disputed amounts shall be resolved within thirty (30) days or escalated to mediation.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause defines a short payment window with a concrete, time-bound dispute resolution process, protecting the consultant from indefinite withholding.",
+    "source": "constructed - dispute resolution with fixed timeline"
+  },
+  {
+    "id": "pt004",
+    "text": "Consultant's fee is contingent on Client securing funding for the project. Payment shall be made within 15 days of Client receiving such funding, with no fixed outer deadline if funding is delayed.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "Payment is entirely contingent on an external event outside the consultant's control, with no cap on how long payment could be delayed.",
+    "source": "constructed - contingent/conditional payment with no outer limit"
+  },
+  {
+    "id": "pt005",
+    "text": "Payment shall be made to the consultant and interest shall be calculated on delayed payment amounts during the period of delay.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause provides compensation for delayed payment through interest.",
+    "source": "LawInsider - Mode of Billing and Payment"
+  },
+  {
+    "id": "pt006",
+    "text": "Client shall pay Consultant fifty percent (50%) of the total fee upon signing, with the remaining fifty percent (50%) due upon project completion, as determined solely by Client's satisfaction with deliverables.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "Half the fee depends on a subjective satisfaction standard set entirely by the Client, with no objective completion criteria defined.",
+    "source": "constructed - milestone payment with subjective acceptance clause"
+  },
+
+
+
+
+
+
+
+  {
+    "id": "ipt001",
+    "text": "Ownership of the Deliverables shall transfer to Client only upon Client's first commercial public launch of the product incorporating the Deliverables. Prior to such launch, Contractor retains all rights in the Deliverables.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "Ownership is tied to an uncertain future business event outside the contractor's control, and there is no outer deadline if the launch never happens, leaving ownership status indefinite.",
+    "source": "constructed - ownership transfer triggered by commercial launch event"
+  },
+  {
+    "id": "ipt002",
+    "text": "Client shall own all reports and documentation specifically prepared for Client under this Statement of Work. Consultant may reuse general knowledge, skills, and experience gained while performing the Services.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The clause transfers project-specific deliverables while preserving the consultant's general expertise.",
+    "source": "LawInsider - Work Product Ownership"
+  },
+  {
+    "id": "ipt003",
+    "text": "During the engagement, Consultant shall disclose to Client any inventions, improvements, or discoveries related to Client's business, and Client shall have exclusive rights to such inventions.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The clause may capture broad inventions beyond the specific contracted deliverables.",
+    "source": "LawInsider - Invention Rights"
+  },
+  {
+    "id": "ipt004",
+    "text": "Contractor shall indemnify and defend Client against any third-party claim that the Deliverables infringe such third party's intellectual property rights, and shall bear all resulting costs, damages, and settlement amounts without limitation.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The contractor bears unlimited, uncapped financial exposure for IP infringement claims on the deliverable, which is a significant liability risk distinct from ownership itself.",
+    "source": "constructed - unlimited IP infringement indemnification"
+  },
+  {
+    "id": "ipt005",
+    "text": "Contractor shall receive a percentage of future licensing revenue generated from intellectual property created during the project, while Client retains commercialization rights.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "Revenue-sharing ownership arrangements are uncommon compared with normal assignment or licensing structures.",
+    "source": "LawInsider - Intellectual Property Revenue Sharing"
+  },
+  {
+    "id": "ipt006",
+    "text": "Contractor's indemnification obligation for third-party intellectual property infringement claims shall not exceed the total fees paid by Client under this Agreement, and Client must notify Contractor of any claim within thirty (30) days of becoming aware of it.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The indemnification liability is capped at fees paid and includes a clear notice requirement, protecting the contractor from open-ended exposure.",
+    "source": "constructed - capped IP infringement indemnification with notice requirement"
+  },
+
+
+
+
+
+
+
+
+
+  
+  {
+    "id": "lt001",
+    "text": "Contractor's aggregate liability under this Agreement, whether in contract, tort, or otherwise, shall not exceed the total fees paid by Client in the six (6) months preceding the claim, except for claims arising from Contractor's gross negligence or willful misconduct, which shall be uncapped.",
+    "category": "liability",
+    "risk_label": "non-standard",
+    "reason": "The cap applies only to a short six-month lookback rather than total fees, and carries an uncapped carve-out for gross negligence, making the actual exposure harder to predict than a simple flat cap.",
+    "source": "constructed - short lookback cap with gross-negligence carve-out"
+  },
+  {
+    "id": "lt002",
+    "text": "Contractor shall maintain general liability insurance and shall be responsible for any damages exceeding the insurance policy limits out of Contractor's own funds, with no ceiling on such excess personal liability.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "Requiring the contractor to personally cover damages beyond insurance limits, with no cap, creates open-ended financial exposure beyond what insurance would typically cover.",
+    "source": "constructed - uncapped personal liability for damages exceeding insurance"
+  },
+  {
+    "id": "lt003",
+    "text": "Neither party shall be liable to the other for any damages, of any kind, arising from this Agreement, except that each party remains liable for payment obligations expressly set forth herein.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "A broad mutual liability waiver, limited only to payment obligations, strongly protects the contractor from most forms of liability exposure.",
+    "source": "constructed - broad mutual liability waiver with payment carve-out"
+  },
+  {
+    "id": "lt004",
+    "text": "Contractor shall be responsible for any fines, penalties, or regulatory sanctions imposed on Client that result, directly or indirectly, from Contractor's performance of the Services, regardless of fault or the amount involved.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "The contractor bears responsibility for regulatory penalties imposed on the client with no fault requirement and no cap, an unusually broad and uncapped liability transfer.",
+    "source": "constructed - uncapped liability for client's regulatory penalties"
+  },
+  {
+    "id": "lt005",
+    "text": "The parties agree that any liability claims must be brought within one (1) year of the event giving rise to the claim, after which such claims shall be time-barred, and total liability for any single claim shall not exceed $50,000.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "A clear time limit combined with a fixed dollar cap gives the contractor predictable, bounded exposure with a defined point of finality.",
+    "source": "constructed - fixed liability cap with claim time-bar"
+  },
+  {
+    "id": "lt006",
+    "text": "In the event of a dispute regarding the cause of any damages, Contractor shall bear the burden of proving that the damages were not caused by Contractor's performance, and shall be presumed liable absent such proof.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "Shifting the burden of proof onto the contractor and presuming liability by default is a significant procedural disadvantage that increases practical liability risk even without changing the stated cap.",
+    "source": "constructed - reversed burden of proof with presumption of liability"
+  },
+
+
+
+
+
+
+
+
+
+  {
+    "id": "tt001",
+    "text": "Either party may terminate this Agreement upon sixty (60) days written notice. In the event Client terminates without cause, Client shall pay Contractor a early-termination fee equal to twenty percent (20%) of the remaining contract value.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "The clause gives the contractor both a reasonable notice period and additional compensation if the client cancels without cause, providing stronger protection than a plain notice-only clause.",
+    "source": "constructed - notice period plus early-termination compensation fee"
+  },
+  {
+    "id": "tt002",
+    "text": "This Agreement shall terminate automatically, without notice to either party, upon the occurrence of Client's change of control, merger, or acquisition by a third party, with no continuation or transition obligations owed to Contractor.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "Automatic termination tied to a change-of-control event, with no notice and no transition support, leaves the contractor with sudden, unpredictable loss of the engagement outside either party's direct control.",
+    "source": "constructed - automatic termination on client change-of-control with no notice"
+  },
+  {
+    "id": "tt003",
+    "text": "If Contractor fails to meet any deadline specified in the Statement of Work by even one (1) day, Client may terminate this Agreement immediately without any cure period or opportunity to remedy the delay.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "A zero-tolerance termination trigger with no cure period for even minor delays creates disproportionate risk relative to the severity of a typical missed deadline.",
+    "source": "constructed - zero-tolerance termination with no cure period for minor delay"
+  },
+  {
+    "id": "tt004",
+    "text": "Upon expiration of the initial term, this Agreement shall continue on a month-to-month basis under the same terms, terminable by either party upon fifteen (15) days written notice.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "A short, symmetric notice period for ending the month-to-month continuation gives both parties reasonable and equal flexibility to exit.",
+    "source": "constructed - month-to-month continuation with short symmetric notice"
+  },
+  {
+    "id": "tt005",
+    "text": "Client may suspend, rather than terminate, this Agreement at any time for up to ninety (90) days without notice, during which Contractor shall receive no compensation but shall remain bound by exclusivity and non-compete obligations.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "An unpaid suspension period during which the contractor still owes exclusivity obligations, with no notice required, effectively strips income while continuing to restrict the contractor's other work.",
+    "source": "constructed - unpaid suspension with continued exclusivity obligations"
+  },
+  {
+    "id": "tt006",
+    "text": "Either party may terminate this Agreement for convenience upon forty-five (45) days written notice, provided that any Services already commenced under an active Statement of Work shall be completed and paid for in full before termination takes effect.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "Requiring in-progress work to be completed and paid in full before termination takes effect protects the contractor from having active work cut off mid-stream.",
+    "source": "constructed - termination notice with completion-and-payment protection for active work"
+  }
+]

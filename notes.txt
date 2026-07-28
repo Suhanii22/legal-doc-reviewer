@@ -1,0 +1,28 @@
+Your laptop localhost:8000
+          |
+          ↓
+Docker FastAPI container 0.0.0.0:8000
+
+
+
+host for db
+if local db = localhost
+if docker = postgres
+
+
+Your Laptop              Docker Container
+-------------            ----------------
+localhost:5433   ----->  postgres:5432
+
+
+# import os
+# DATABASE_URL = (
+#     f"postgresql://{os.getenv('DATABASE_USERNAME')}:"
+#     f"{os.getenv('DATABASE_PASSWORD')}"
+#     f"{os.getenv('DATABASE_HOSTNAME')}:"
+#     f"{os.getenv('DATABASE_PORT')}/"
+#     f"{os.getenv('DATABASE_NAME')}"
+# )
+
+
+When SQLAlchemy sees a class inheriting from Base, it assumes it's a database table. Every table must have a primary key.

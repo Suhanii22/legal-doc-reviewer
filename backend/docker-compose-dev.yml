@@ -1,0 +1,38 @@
+services:
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./:/usr/src/app
+
+    environment:
+      DATABASE_HOSTNAME: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: Suhani#7820
+      DATABASE_NAME: legal-doc
+
+    depends_on:
+      - postgres
+
+
+  postgres:
+    image: pgvector/pgvector:pg17
+
+    environment:
+      POSTGRES_DB: legal-doc
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Suhani#7820
+
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+
+    ports:
+      - "5433:5432"
+
+
+volumes:
+  postgres-db:

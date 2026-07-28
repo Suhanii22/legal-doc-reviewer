@@ -1,0 +1,493 @@
+
+
+
+
+[
+  {
+    "id": "p001",
+    "text": "Consultant shall render a monthly invoice setting forth the hourly fees for the month, the nature and amount of any costs to be reimbursed, and the balance due. City shall pay the balance due in full upon presentation. If City fails to pay the balance due in full within thirty (30) days following presentation, City's account shall be deemed delinquent, and City shall be charged a late payment fee of one and one-half percent (1-1/2%) of the balance then due.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause defines invoicing, payment timing, and a late payment penalty that protects the consultant from delayed payment.",
+    "source": "LawInsider - Invoice; Interest on Unpaid Balance"
+  },
+  {
+    "id": "p002",
+    "text": "Invoices are due and payable upon receipt. Interest will begin to accrue on the thirty-first (31st) day following the invoice date on all unpaid balances at a rate of one and one-half percent (1½%) per month.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause provides a clear payment deadline and interest protection for overdue invoices.",
+    "source": "LawInsider - Invoices; Payment Clause Samples"
+  },
+  {
+    "id": "p003",
+    "text": "All payments to the Consultant shall be made against the Consultant's invoices which shall be submitted to the Client at the end of each calendar month. All payments shall be made by the Client within 30 days of the Consultant's invoice.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "The clause sets a payment deadline but includes no penalty or interest if the Client misses it, leaving the consultant with no recourse for delay.",
+    "source": "LawInsider - Fees Expenses and Payment"
+  },
+  {
+    "id": "p004",
+    "text": "The Client shall pay the Consultant monthly in arrears the Fee and Expenses for the Services hereunder. Such sums shall be paid by the Company within 30 days of receipt of the Consultant's invoice.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "A payment window is defined, but there is no consequence specified if the Client pays late.",
+    "source": "LawInsider - Payment of Consultancy Fee and Expenses"
+  },
+  {
+    "id": "p005",
+    "text": "For all Services performed pursuant to a SOW, Client shall pay Consultant all undisputed amounts owed within 30 calendar days after the date Client receives a detailed invoice from Consultant. Any late payment shall accrue interest at a rate of the lesser of 1.5% per month and the maximum amount allowed by law.",
+    "category": "payment",
+    "risk_label": "safe",
+    "reason": "The clause combines a payment deadline, invoice requirement, and late payment interest protection.",
+    "source": "LawInsider - Fees Expenses Payment"
+  },
+  {
+    "id": "p006",
+    "text": "Unless otherwise provided, terms of payment shall be net ninety (90) days from latest of the following: Buyer's receipt of Seller's proper invoice, scheduled completion of performance date of the Work, or actual completion of performance of the Work.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "Net 90 payment terms create a long waiting period and increase cash-flow risk for the service provider.",
+    "source": "LawInsider - Payments, Taxes, and Duties"
+  },
+  {
+    "id": "p007",
+    "text": "Payment shall be made only after the final report and a final statement have been submitted and approved as satisfactory by the Client.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "Payment depends on client approval, which can create uncertainty if acceptance criteria are unclear.",
+    "source": "LawInsider - Mode of Billing and Payment"
+  },
+  {
+    "id": "p008",
+    "text": "Payments of undisputed amounts are due and payable within sixty (60) days after the City's receipt of an invoice from the Consultant. Undisputed amounts unpaid after sixty (60) days shall bear interest.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "The payment period is longer than common Net 30 terms, but includes some protection through interest.",
+    "source": "LawInsider - Payments to the Consultant"
+  },
+  {
+    "id": "p009",
+    "text": "Payment will be due net ninety (90) days after receipt of the invoice by Buyer or acceptance of the goods or services by Buyer, whichever is later.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "The long payment period combined with acceptance dependency delays when payment becomes due.",
+    "source": "LawInsider - Price and Payment Terms"
+  },
+  {
+    "id": "p010",
+    "text": "Client shall make payments in accordance with payment schedules. Final payment shall be made only after the final report and final statement have been submitted and approved as satisfactory by the Client.",
+    "category": "payment",
+    "risk_label": "risky",
+    "reason": "Final payment depends on client approval, giving the client control over payment timing.",
+    "source": "LawInsider - Mode of Billing and Payment"
+  },
+  {
+    "id": "p011",
+    "text": "Payments falling due on a weekend or bank holiday may be made on the following business day without incurring late payment interest penalties.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "The clause contains a specific exception mechanism that is less common than standard payment terms.",
+    "source": "LawInsider - Payment Terms and Invoicing"
+  },
+  {
+    "id": "p012",
+    "text": "Payment terms are three percent (3%) thirty (30), net ninety (90) days from the date of Seller's correct invoice unless otherwise stated.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "The payment structure combines early-payment discount terms with Net 90 terms, making it more complex than normal payment clauses.",
+    "source": "LawInsider - Payment Terms and Invoicing"
+  },
+  {
+    "id": "p013",
+    "text": "The Client may dispute all or a portion of any invoice. The Client shall pay undisputed amounts while disputed portions may be withheld until resolution.",
+    "category": "payment",
+    "risk_label": "non-standard",
+    "reason": "The dispute handling mechanism is more detailed than standard payment clauses and changes normal payment flow.",
+    "source": "LawInsider - Invoices; Payment Clause Samples"
+  },
+
+
+
+
+
+
+
+
+  {
+    "id": "ip001",
+    "text": "All intellectual property rights in Deliverables specifically created by Consultant for Client under this Agreement shall be assigned to Client upon payment in full of all amounts due to Consultant.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "Ownership transfer occurs only after payment, protecting the contractor from losing rights before compensation.",
+    "source": "LawInsider - Intellectual Property Rights Assignment"
+  },
+  {
+    "id": "ip002",
+    "text": "Consultant retains all right, title, and interest in and to Consultant's pre-existing materials, tools, methodologies, know-how, and intellectual property used in performing the Services.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The clause protects contractor-owned IP created before the agreement.",
+    "source": "LawInsider - Consultant Agreement Intellectual Property"
+  },
+  {
+    "id": "ip003",
+    "text": "Contractor hereby assigns to Client all right, title, and interest in any Work Product created in connection with the Services.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The clause clearly defines ownership transfer of work product, which is common when the contractor is paid for custom deliverables.",
+    "source": "LawInsider - Work Product Assignment"
+  },
+  {
+    "id": "ip004",
+    "text": "Client shall own all Deliverables created specifically for Client under this Agreement, excluding Contractor's Background Technology.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "Client receives ownership of paid deliverables while contractor retains background technology.",
+    "source": "LawInsider - Background Technology Clause"
+  },
+  {
+    "id": "ip005",
+    "text": "Contractor grants Client a worldwide, non-exclusive license to use Contractor's pre-existing materials incorporated into the Deliverables solely for Client's business purposes.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The license is limited and allows the contractor to retain ownership of existing IP.",
+    "source": "LawInsider - Intellectual Property License"
+  },
+  {
+    "id": "ip006",
+    "text": "Each party shall retain ownership of intellectual property owned by such party prior to the effective date of this Agreement.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "The clause protects both parties' existing intellectual property rights.",
+    "source": "LawInsider - Ownership of Intellectual Property"
+  },
+  {
+    "id": "ip009",
+    "text": "Contractor agrees that all work performed under this Agreement shall be considered work made for hire and shall belong exclusively to Client.",
+    "category": "ip_ownership",
+    "risk_label": "safe",
+    "reason": "This assigns ownership of the specific deliverables created under the engagement to the Client, which is the standard, expected outcome in a paid service agreement.",
+    "source": "LawInsider - Work Made For Hire"
+  },
+
+  {
+    "id": "ip007",
+    "text": "Contractor hereby assigns to Client all worldwide right, title, and interest in all inventions, discoveries, developments, improvements, and works created during the term of this Agreement.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The clause is extremely broad and may transfer unrelated inventions created during the agreement period, not just the specific deliverables.",
+    "source": "LawInsider - Assignment of Intellectual Property"
+  },
+  {
+    "id": "ip008",
+    "text": "All intellectual property developed by Contractor before, during, or after the performance of Services shall become the sole property of Client.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The clause takes ownership of contractor IP beyond the specific project work, including IP developed before and after the engagement.",
+    "source": "LawInsider - Intellectual Property Ownership"
+  },
+  {
+    "id": "ip010",
+    "text": "Client shall have exclusive ownership of all ideas, concepts, designs, documents, software, and materials created by Contractor in connection with the Services.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The clause gives ownership over broad categories including ideas and concepts, creating excessive risk beyond the deliverable itself.",
+    "source": "LawInsider - Intellectual Property Assignment"
+  },
+  {
+    "id": "ip011",
+    "text": "Contractor waives any moral rights or similar rights in all materials delivered to Client.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "Waiving moral rights removes certain protections over the contractor's creative work.",
+    "source": "LawInsider - Moral Rights Waiver"
+  },
+  {
+    "id": "ip012",
+    "text": "Client shall own all inventions, whether patentable or not, conceived or developed by Contractor during the engagement.",
+    "category": "ip_ownership",
+    "risk_label": "risky",
+    "reason": "The clause covers all inventions during engagement, potentially including unrelated inventions not tied to the actual deliverable.",
+    "source": "LawInsider - Invention Assignment Agreement"
+  },
+
+  {
+    "id": "ip013",
+    "text": "Client shall receive a perpetual, irrevocable, worldwide, royalty-free license to use all materials developed by Contractor.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "A perpetual worldwide license is broader than typical project-specific usage rights.",
+    "source": "LawInsider - Intellectual Property License"
+  },
+  {
+    "id": "ip014",
+    "text": "Contractor shall contribute all improvements, modifications, and derivative works created after delivery of the software to Client.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "Requiring ownership of future improvements after delivery is unusual and extends beyond the original deliverable.",
+    "source": "LawInsider - Software Intellectual Property Rights"
+  },
+  {
+    "id": "ip015",
+    "text": "Client and Contractor shall jointly own all intellectual property created during the performance of the Services.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "Joint ownership creates unusual management and commercialization complications compared to a clean single-owner assignment.",
+    "source": "LawInsider - Joint Intellectual Property Ownership"
+  },
+  {
+    "id": "ip016",
+    "text": "Contractor shall provide Client with an unlimited license to modify, distribute, sublicense, and commercially exploit Contractor's materials.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "The license grants unusually broad rights compared with a normal service agreement license.",
+    "source": "LawInsider - Intellectual Property License Rights"
+  },
+  {
+    "id": "ip017",
+    "text": "Contractor grants Client a license limited to internal business use of the Deliverables, with no right to sublicense, resell, or commercially redistribute the materials without Contractor's separate written consent.",
+    "category": "ip_ownership",
+    "risk_label": "non-standard",
+    "reason": "A usage-restricted license instead of full ownership assignment is a less common structure than either full assignment or a broad unrestricted license.",
+    "source": "constructed - restricted internal-use license clause"
+  },
+
+
+
+
+
+
+
+   {
+    "id": "l001",
+    "text": "Consultant's liability to Company for damages arising out of this Agreement shall be limited to direct damages and shall not exceed the amount of fees paid by Company under this Agreement.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "Liability is explicitly capped at the fees paid, protecting the contractor from open-ended financial exposure.",
+    "source": "LawInsider - Limitation of Liability and Disclaimer of Warranties"
+  },
+  {
+    "id": "l002",
+    "text": "Consultant's total liability to Company shall not exceed the greater of (i) the total Consultant compensation value or (ii) the amount of recoverable insurance, regardless of whether any action or claim is based upon contract, warranty, tort, or strict liability.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "A clear liability cap tied to compensation or insurance coverage limits the contractor's exposure across all claim types.",
+    "source": "LawInsider - Consultant's Limitation of Liability"
+  },
+  {
+    "id": "l003",
+    "text": "In no event shall Consultant be liable for consequential, incidental, special, or indirect damages, or for acts of negligence which are not intentional or gross in nature, regardless of whether either party has been advised of the possibility of such damages.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "The clause excludes indirect and consequential damages, shielding the contractor from unpredictable downstream losses.",
+    "source": "LawInsider - No Warranties; Limitation on Liability of Consultant"
+  },
+  {
+    "id": "l004",
+    "text": "Neither the Service Provider nor its officers, employees, or representatives shall be liable to the Company for any loss, liability, damage, or expense arising out of the performance of Services, unless such loss is proven to result directly from willful misconduct.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "Liability is limited to cases of proven willful misconduct, protecting the contractor from ordinary business risk.",
+    "source": "LawInsider - Service Provider Limitation of Liability"
+  },
+  {
+    "id": "l005",
+    "text": "The Consultant shall not be liable for any indirect or consequential losses and damages arising from the provision of the Services, including any delays or loss of use, or loss of profits or products to third parties.",
+    "category": "liability",
+    "risk_label": "safe",
+    "reason": "The clause excludes consequential and indirect losses, limiting the contractor's financial exposure to direct damages only.",
+    "source": "LawInsider - Liability of the Consultant"
+  },
+
+  {
+    "id": "l006",
+    "text": "Contractor shall be fully liable for any and all damages, losses, costs, and expenses of any kind arising from or related to this Agreement, without limitation as to amount or type of damages.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "There is no cap on liability and no exclusion of any damage type, exposing the contractor to unlimited financial risk.",
+    "source": "constructed - unlimited, uncapped liability clause"
+  },
+  {
+    "id": "l007",
+    "text": "Contractor agrees to indemnify, defend, and hold harmless Client from any and all claims, damages, losses, and expenses, including consequential and punitive damages, arising from Contractor's performance of the Services, with no maximum limit on Contractor's liability.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "The indemnification obligation includes punitive and consequential damages with no cap, creating severe uncapped exposure.",
+    "source": "constructed - unlimited indemnification including punitive damages"
+  },
+  {
+    "id": "l008",
+    "text": "Contractor shall be liable for any lost profits, business interruption, or reputational harm suffered by Client as a result of any defect, delay, or error in the Services, regardless of the cause.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "The clause holds the contractor liable for indirect and speculative damages like lost profits and reputational harm, which are normally excluded in standard liability clauses.",
+    "source": "constructed - liability extended to lost profits and reputational harm"
+  },
+  {
+    "id": "l009",
+    "text": "Contractor's liability under this Agreement shall survive termination indefinitely and shall not be subject to any statute of limitations or time bar.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "Removing any time limit on liability exposes the contractor to claims indefinitely into the future, with no point of finality.",
+    "source": "constructed - liability with no time limitation or survival cap"
+  },
+  {
+    "id": "l010",
+    "text": "In the event of any breach by Contractor, Contractor shall be liable for liquidated damages of $10,000 per day of delay, in addition to any other damages or remedies available to Client at law or in equity.",
+    "category": "liability",
+    "risk_label": "risky",
+    "reason": "A per-day liquidated damages penalty stacked on top of other remedies can create rapidly escalating, disproportionate financial exposure.",
+    "source": "constructed - stacked liquidated damages penalty"
+  },
+
+  {
+    "id": "l011",
+    "text": "Each party's liability under this Agreement shall be limited to $1,000,000, except that this limitation shall not apply to breaches of confidentiality obligations or indemnification for third-party claims.",
+    "category": "liability",
+    "risk_label": "non-standard",
+    "reason": "The liability cap has carve-outs for specific claim types, which is more complex than a simple flat cap and requires careful reading to know what is actually limited.",
+    "source": "constructed - liability cap with confidentiality and indemnification carve-outs"
+  },
+  {
+    "id": "l012",
+    "text": "Contractor's liability shall be limited to the fees paid in the twelve (12) months preceding the event giving rise to the claim, rather than the total fees paid over the life of the Agreement.",
+    "category": "liability",
+    "risk_label": "non-standard",
+    "reason": "A rolling 12-month liability cap is less common than a simple total-fees cap and produces a different, less predictable liability ceiling depending on contract length.",
+    "source": "constructed - rolling 12-month liability cap"
+  },
+  {
+    "id": "l013",
+    "text": "The parties agree to maintain professional liability insurance of at least $2,000,000 per occurrence for the duration of this Agreement, and Contractor's liability shall be limited to the amount actually recoverable under such insurance policy.",
+    "category": "liability",
+    "risk_label": "non-standard",
+    "reason": "Tying the liability cap to insurance recovery rather than a fixed dollar figure introduces uncertainty depending on insurer payout, which is a less standard structure.",
+    "source": "constructed - liability cap tied to insurance recovery amount"
+  },
+
+
+
+
+
+
+
+
+   {
+    "id": "t001",
+    "text": "The State may terminate this Contract at any time, without cause, by providing a written notice to the other party at least thirty (30) Days in advance of the intended date of termination. Contractor may terminate this Contract at any time, without cause, by providing a written notice to the other party at least sixty (60) Days in advance of the intended date of termination.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "Both parties have a defined notice period before termination, giving the contractor advance warning and time to plan.",
+    "source": "LawInsider - Contract Termination for Convenience"
+  },
+  {
+    "id": "t002",
+    "text": "Either party may terminate this Agreement, for any or no reason, on thirty (30) days' advance written notice to the non-terminating party.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "A mutual, symmetric notice period applies equally to both parties, which is a standard and balanced termination structure.",
+    "source": "LawInsider - Mutual Termination for Convenience"
+  },
+  {
+    "id": "t003",
+    "text": "The Owner may, by written notice to the Consultant, terminate this Agreement for its convenience. Owner agrees to make just and equitable compensation to the Consultant for satisfactory work completed up through the date the Consultant receives the termination notice.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "The clause guarantees payment for work completed up to the termination date, protecting the consultant from losing compensation for finished work.",
+    "source": "LawInsider - Termination for Convenience (Professional Services)"
+  },
+  {
+    "id": "t004",
+    "text": "BOCC and Contractor may terminate this Agreement, without cause and for convenience, upon thirty (30) days written notice to the non-terminating party. The Contractor shall receive payment for all Work performed to the date of termination.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "The clause combines a fair notice period with a guarantee of payment for completed work, protecting the contractor on both fronts.",
+    "source": "LawInsider - Mutual Termination for Convenience"
+  },
+  {
+    "id": "t005",
+    "text": "This Agreement may be terminated by either party upon material breach by the other party that remains uncured for thirty (30) days following written notice specifying the breach.",
+    "category": "termination",
+    "risk_label": "safe",
+    "reason": "Termination requires a specific, identified breach and a cure period, protecting the contractor from arbitrary termination.",
+    "source": "constructed - termination for cause with cure period"
+  },
+
+  {
+    "id": "t006",
+    "text": "Client may terminate this Agreement at any time, immediately and without notice, for any reason or no reason, and shall have no obligation to pay for work performed but not yet delivered as of the termination date.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "There is no notice period and no payment guarantee for undelivered work, leaving the contractor exposed to sudden loss of income for work already in progress.",
+    "source": "constructed - immediate termination with no payment for undelivered work"
+  },
+  {
+    "id": "t007",
+    "text": "Client reserves the right to terminate this Agreement immediately upon written notice if, in Client's sole discretion, Contractor's performance is deemed unsatisfactory.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "Termination is based entirely on the client's subjective judgment with no objective performance standard, giving the client unchecked discretion to end the contract at any time.",
+    "source": "constructed - termination based on unilateral subjective satisfaction"
+  },
+  {
+    "id": "t008",
+    "text": "This Agreement automatically renews for successive one-year terms unless either party provides written notice of non-renewal at least one hundred twenty (120) days prior to the end of the then-current term.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "A 120-day advance notice requirement to avoid renewal is unusually long and easy to miss, effectively locking the contractor into another year by default.",
+    "source": "constructed - auto-renewal with long advance cancellation window"
+  },
+  {
+    "id": "t009",
+    "text": "Upon termination for any reason, all outstanding invoices shall become immediately void, and Contractor waives any right to payment for Services rendered but not yet invoiced as of the termination date.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "The contractor forfeits payment for completed but uninvoiced work purely because of the timing of termination, regardless of which party terminated or why.",
+    "source": "constructed - forfeiture of payment for uninvoiced work upon termination"
+  },
+  {
+    "id": "t010",
+    "text": "Client may terminate this Agreement without cause upon written notice, and upon such termination Contractor shall, within five (5) business days and at Contractor's own expense, return all materials and reimburse Client for any fees paid in advance for services not yet performed.",
+    "category": "termination",
+    "risk_label": "risky",
+    "reason": "The contractor bears the cost of returning materials and must refund prepaid fees on a very short deadline, shifting the financial burden of termination entirely onto the contractor.",
+    "source": "constructed - contractor bears termination costs and refund obligation"
+  },
+
+  {
+    "id": "t011",
+    "text": "Either party may terminate this Agreement for convenience upon ninety (90) days written notice; provided that during the notice period, the terminating party shall have the option, but not the obligation, to continue paying for Services on a reduced scope basis as mutually agreed.",
+    "category": "termination",
+    "risk_label": "non-standard",
+    "reason": "The optional reduced-scope arrangement during the notice period is a less common structure than a simple clean termination, creating ambiguity about what happens during the notice window.",
+    "source": "constructed - termination with optional reduced-scope transition period"
+  },
+  {
+    "id": "t012",
+    "text": "This Agreement may be terminated by Client for convenience only during the first six (6) months of the Term; after such period, termination for convenience shall require mutual written consent of both parties.",
+    "category": "termination",
+    "risk_label": "non-standard",
+    "reason": "A time-limited termination-for-convenience right that later requires mutual consent is an unusual, tiered structure not typical of standard termination clauses.",
+    "source": "constructed - termination-for-convenience right that expires after a set period"
+  },
+  {
+    "id": "t013",
+    "text": "In the event of termination, the parties agree to submit to binding arbitration to determine the amount of compensation owed for work performed prior to termination, rather than resolving such disputes through direct negotiation or court proceedings.",
+    "category": "termination",
+    "risk_label": "non-standard",
+    "reason": "Mandating arbitration specifically for termination-related payment disputes is a more specialized dispute-resolution mechanism than typically found in standard termination clauses.",
+    "source": "constructed - mandatory arbitration for termination payment disputes"
+  }
+]
+
+
+
+
+
+
+
+
+
+
