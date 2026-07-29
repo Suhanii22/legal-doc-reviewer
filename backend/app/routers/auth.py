@@ -8,6 +8,8 @@ from app.utils.hash import hash_password
 from fastapi.security import OAuth2PasswordRequestForm
 from app.utils.hash import verify_password
 from app.utils.jwt import create_access_token
+from app.utils.oauth2 import get_current_user
+from app.utils.role_check import role_required
 
 
 router = APIRouter(
@@ -15,7 +17,7 @@ router = APIRouter(
     tags=["Authentication"]
 )
 
-
+# register
 @router.post(
     "/register",
     response_model=UserResponse,
@@ -78,7 +80,7 @@ def login(
 
     access_token = create_access_token(
         data={
-            "sub": str(user.id),
+            "user_id": str(user.id),
             "role": user.role.value
         }
     )
@@ -86,4 +88,32 @@ def login(
     return {
         "access_token": access_token,
         "token_type": "bearer"
+    }
+
+
+@router.get("/me")
+def get_me(
+    current_user = Depends(get_current_user)
+):
+    return current_user
+
+
+
+
+@router.get("/test")
+def test_authentication(
+    current_user = Depends(get_current_user)
+):
+    return {
+        "message": "You are authenticated"
+    }
+
+
+
+@router.get("/review")
+def review_document(
+    current_user: UserResponse = Depends(role_required("reviewer"))
+):
+    return {
+        "message": "Reviewer access granted"
     }

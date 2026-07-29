@@ -7,16 +7,17 @@ from pgvector.sqlalchemy import Vector
 from enum import Enum
 from sqlalchemy import Enum as SQLEnum
 
-class UserRole(Enum):
+class UserRole(str,Enum):
     Uploader="uploader"
     Reviewer="reviewer"
 
-class ContractStatus(Enum):
+class ContractStatus(str,Enum):
+    Uploaded = "uploaded"
     Processing="processing"
     Completed="completed"
     Failed="failed"   
 
-class Risk_type(Enum):
+class RiskType(str,Enum):
     Risky="risky"
     Safe="safe"
     Non_Standard="non_standard"
@@ -28,7 +29,13 @@ class User(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     email = Column(String, unique=True, nullable=False)
     hashed_password = Column(String, nullable=False)
-    role = Column(SQLEnum(UserRole) , nullable=False )
+    role = Column(
+    SQLEnum(
+        UserRole,
+        values_callable=lambda enum: [e.value for e in enum]
+    ),
+    nullable=False
+    )
     created_at = Column(DateTime(timezone=True),server_default=func.now())
 
 
@@ -39,7 +46,13 @@ class Contract(Base):
     user_id=Column(UUID(as_uuid=True),ForeignKey("users.id"),nullable=False)
     filename=Column(String,nullable=False)
     idempotent_key=Column(String,nullable=False)
-    status=Column(SQLEnum(ContractStatus))
+    status = Column(
+    SQLEnum(
+        ContractStatus,
+        values_callable=lambda enum: [e.value for e in enum]
+    ),
+    nullable=False
+    )
     uploaded_at=Column(DateTime(timezone=True),server_default=func.now()) 
 
 
@@ -62,7 +75,13 @@ class Ref_Clause(Base):
     id = Column(String,primary_key=True)
     text=Column(Text,nullable=False)
     category=Column(String, nullable=False)
-    risk_label=Column(SQLEnum(Risk_type),nullable=False)
+    risk_label = Column(
+    SQLEnum(
+        RiskType,
+        values_callable=lambda enum: [e.value for e in enum]
+    ),
+    nullable=False
+    )
     reason=Column(Text,nullable=False)
     embedding=Column(Vector(1536))
 
@@ -72,7 +91,13 @@ class Flag(Base):
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     clause_id=Column(UUID(as_uuid=True), ForeignKey("clauses.id",ondelete="CASCADE"),nullable=False)
-    risk_label = Column( String,nullable=False )
+    risk_label = Column(
+    SQLEnum(
+        RiskType,
+        values_callable=lambda enum: [e.value for e in enum]
+    ),
+    nullable=False
+    )
     confidence_score = Column(Float,nullable=False )
     ai_reasoning = Column(Text)
     status = Column(String,nullable=False,default="pending" )
@@ -88,7 +113,13 @@ class Review(Base):
     id = Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)
     flag_id = Column( UUID(as_uuid=True), ForeignKey("flags.id", ondelete="CASCADE"), nullable=False)
     reviewer_id = Column(UUID(as_uuid=True),ForeignKey("users.id"),nullable=False )
-    final_label = Column( String,nullable=False)
+    final_label = Column(
+    SQLEnum(
+        RiskType,
+        values_callable=lambda enum: [e.value for e in enum]
+    ),
+    nullable=False
+    )
     review_notes = Column(Text)
     reviewed_at = Column( DateTime(timezone=True), server_default=func.now())
 

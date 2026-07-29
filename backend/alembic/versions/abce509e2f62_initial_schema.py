@@ -1,8 +1,8 @@
-"""Initial schema
+"""initial schema
 
-Revision ID: 877fce114fbe
+Revision ID: abce509e2f62
 Revises: 
-Create Date: 2026-07-28 07:34:34.780213
+Create Date: 2026-07-29 10:52:49.173296
 
 """
 from typing import Sequence, Union
@@ -12,9 +12,8 @@ import sqlalchemy as sa
 from pgvector.sqlalchemy import Vector
 
 
-
 # revision identifiers, used by Alembic.
-revision: str = '877fce114fbe'
+revision: str = 'abce509e2f62'
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -27,7 +26,7 @@ def upgrade() -> None:
     sa.Column('id', sa.String(), nullable=False),
     sa.Column('text', sa.Text(), nullable=False),
     sa.Column('category', sa.String(), nullable=False),
-    sa.Column('risk_label', sa.Enum('Risky', 'Safe', 'Non_Standard', name='risk_type'), nullable=False),
+    sa.Column('risk_label', sa.Enum('risky', 'safe', 'non_standard', name='risktype'), nullable=False),
     sa.Column('reason', sa.Text(), nullable=False),
     sa.Column('embedding', Vector(dim=1536), nullable=True),
     sa.PrimaryKeyConstraint('id')
@@ -36,7 +35,7 @@ def upgrade() -> None:
     sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('email', sa.String(), nullable=False),
     sa.Column('hashed_password', sa.String(), nullable=False),
-    sa.Column('role', sa.Enum('Uploader', 'Reviewer', name='userrole'), nullable=False),
+    sa.Column('role', sa.Enum('uploader', 'reviewer', name='userrole'), nullable=False),
     sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email')
@@ -46,7 +45,7 @@ def upgrade() -> None:
     sa.Column('user_id', sa.UUID(), nullable=False),
     sa.Column('filename', sa.String(), nullable=False),
     sa.Column('idempotent_key', sa.String(), nullable=False),
-    sa.Column('status', sa.Enum('Processing', 'Completed', 'Failed', name='contractstatus'), nullable=True),
+    sa.Column('status', sa.Enum('uploaded', 'processing', 'completed', 'failed', name='contractstatus'), nullable=False),
     sa.Column('uploaded_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
     sa.PrimaryKeyConstraint('id')
@@ -64,7 +63,7 @@ def upgrade() -> None:
     op.create_table('flags',
     sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('clause_id', sa.UUID(), nullable=False),
-    sa.Column('risk_label', sa.String(), nullable=False),
+    sa.Column('risk_label', sa.Enum('risky', 'safe', 'non_standard', name='risktype'), nullable=False),
     sa.Column('confidence_score', sa.Float(), nullable=False),
     sa.Column('ai_reasoning', sa.Text(), nullable=True),
     sa.Column('status', sa.String(), nullable=False),
@@ -80,7 +79,7 @@ def upgrade() -> None:
     sa.Column('id', sa.UUID(), nullable=False),
     sa.Column('flag_id', sa.UUID(), nullable=False),
     sa.Column('reviewer_id', sa.UUID(), nullable=False),
-    sa.Column('final_label', sa.String(), nullable=False),
+    sa.Column('final_label', sa.Enum('risky', 'safe', 'non_standard', name='risktype'), nullable=False),
     sa.Column('review_notes', sa.Text(), nullable=True),
     sa.Column('reviewed_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.ForeignKeyConstraint(['flag_id'], ['flags.id'], ondelete='CASCADE'),

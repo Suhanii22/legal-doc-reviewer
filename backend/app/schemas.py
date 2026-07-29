@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from uuid import UUID
 
-from app.models import UserRole
+from app.models import UserRole,ContractStatus
 
 
 class UserCreate(BaseModel):
@@ -20,3 +20,9 @@ class UserResponse(BaseModel):
     model_config = {
         "from_attributes": True
     }
+
+
+class TokenData(BaseModel):
+    id: UUID
+    role: str | None = None    
+
